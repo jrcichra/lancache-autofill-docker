@@ -19,4 +19,4 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
     - name: Test if ./install works
       run: |
-        docker run -it jrcichra/lancache-autofill /home/steam/lancache-autofill/install.sh
+        docker run jrcichra/lancache-autofill /home/steam/lancache-autofill/install.sh
