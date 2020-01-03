@@ -12,7 +12,7 @@ jobs:
     - name: Build the container
       run: |
         echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin 
-        docker build -t jrcichra/lancache-autofill .
+        docker build -t --cache-from=jrcichra/lancache-autofill jrcichra/lancache-autofill .
         docker push jrcichra/lancache-autofill
       env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
