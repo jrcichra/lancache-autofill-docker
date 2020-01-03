@@ -6,4 +6,4 @@ RUN apt update -y \
     && apt-get clean autoclean \
 	  && apt-get autoremove -y \
 	  && rm -rf /var/lib/apt/lists/*
-RUN git clone https://github.com/zeropingheroes/lancache-autofill.git
+RUN git clone https://github.com/zeropingheroes/lancache-autofill.git /home/steam/lancache-autofill
