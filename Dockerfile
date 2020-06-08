@@ -2,7 +2,7 @@ FROM cm2network/steamcmd
 USER root
 RUN apt update -y \
     && apt install -y \
-    php7.3 php7.3-sqlite php7.3-bcmath php7.3-cli php7.3-mbstring composer expect zip unzip git curl vim \
+    php7.3 php7.3-sqlite php7.3-bcmath php7.3-cli php7.3-xml php7.3-mbstring composer expect zip unzip git curl vim \
     && apt-get clean autoclean \
 	  && apt-get autoremove -y \
 	  && rm -rf /var/lib/apt/lists/*
