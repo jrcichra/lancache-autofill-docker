@@ -2,7 +2,7 @@ FROM cm2network/steamcmd
 USER root
 RUN apt update -y \
     && apt install -y \
-    lib32gcc1 lib32stdc++6 lib32tinfo5 lib32ncurses5 php7.2-cli php7.2-mbstring php7.2-sqlite php7.2-bcmath composer expect zip unzip git curl vim \
+    php7.3 php7.3-sqlite php7.3-bcmath php7.3-cli php7.3-mbstring composer expect zip unzip git curl vim \
     && apt-get clean autoclean \
 	  && apt-get autoremove -y \
 	  && rm -rf /var/lib/apt/lists/*
